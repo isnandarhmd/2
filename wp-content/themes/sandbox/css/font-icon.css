@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Unicons";
+  src: url("/wp-content/themes/sandbox/fonts/font-icon/Unicons.woff2") format("woff2"), url("/wp-content/themes/sandbox/fonts/font-icon/Unicons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Custom";
+  src: url("/wp-content/themes/sandbox/fonts/font-icon/Custom.woff2") format("woff2"), url("/wp-content/themes/sandbox/fonts/font-icon/Custom.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=uil-],
+[class*=" uil-"],
+[class^=icn-],
+[class*=" icn-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: normal;
+}
+[class^=uil-],
+[class*=" uil-"] {
+  font-family: "Unicons" !important;
+}
+[class^=icn-],
+[class*=" icn-"] {
+  font-family: "Custom" !important;
+}
+
+.uil-angle-down:before {
+  content: "\e92d";
+}
+.uil-angle-up:before {
+  content: "\e932";
+}
+.icn-caret-right:before {
+  content: "\e900";
+}
+.uil-arrow-to-right:before {
+  content: "\e94e";
+}
+.uil-bars:before {
+  content: "\e972";
+}
+.uil-plus:before {
+  content: "\ec5d";
+}
+.uil-times:before {
+  content: "\ed3b";
+}
+.uil-info-circle:before {
+  content: "\eb99";
+}
+.uil-search:before {
+  content: "\eca5";
+}
+.uil-arrow-up:before {
+  content: "\e951";
+}
+.uil-shopping-cart:before {
+  content: "\ecbd";
+}
+.uil-trash-alt:before {
+  content: "\ed4b";
+}
+.uil-credit-card:before {
+  content: "\ea74";
+}
+.uil-comments:before {
+  content: "\ea56";
+}
+.uil-eye:before {
+  content: "\eae1";
+}
+.uil-eye-slash:before {
+  content: "\eae0";
+}
+.uil-calendar-alt:before {
+  content: "\e9ba";
+}
+.uil-user:before {
+  content: "\ed6f";
+}
+.uil-comment:before {
+  content: "\ea54";
+}
+.uil-arrow-left:before {
+  content: "\e949";
+}
+.uil-arrow-right:before {
+  content: "\e94c";
+}

@@ -1,0 +1,680 @@
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/FloatingButton.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+.ai-floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.ai-floating-btn:hover {
+  background: #6366f1;
+  transform: translateY(-2px);
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/ChatHeader.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 14px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+.ai-chat-header__title {
+  letter-spacing: 0.2px;
+}
+.ai-chat-header__close {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.ai-chat-header__close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/RegenerateButton.scss ***!
+  \******************************************************************************************************************************************************************************************************/
+.ai-regen-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.ai-regen-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/UserMessage.scss ***!
+  \*************************************************************************************************************************************************************************************************/
+.ai-user-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 6px 16px;
+}
+.ai-user-msg__bubble {
+  background: #4f46e5;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 14px 14px 4px 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/PlanSteps.scss ***!
+  \***********************************************************************************************************************************************************************************************/
+.ai-plan-steps {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ai-plan-steps__item {
+  color: #d1d5db;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/AssistantMessage.scss ***!
+  \******************************************************************************************************************************************************************************************************/
+.ai-assistant-msg {
+  padding: 6px 16px;
+  color: #e5e7eb;
+}
+.ai-assistant-msg__text {
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/ThinkingIndicator.scss ***!
+  \*******************************************************************************************************************************************************************************************************/
+.ai-thinking {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+.ai-thinking__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6b7280;
+  animation: ai-thinking-pulse 1.2s infinite ease-in-out;
+}
+.ai-thinking__dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.ai-thinking__dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.ai-thinking__label {
+  margin-left: 6px;
+}
+
+@keyframes ai-thinking-pulse {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/StatusChip.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #d1d5db;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 4px 16px;
+  transition: background 0.15s ease;
+}
+.ai-status-chip:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.ai-status-chip__icon {
+  font-size: 12px;
+}
+.ai-status-chip__duration {
+  color: #6b7280;
+}
+.ai-status-chip__caret {
+  color: #6b7280;
+  font-size: 10px;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/ToolResultView.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+.ai-tool-result {
+  margin-top: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 8px 10px;
+  overflow-x: auto;
+}
+.ai-tool-result__pre {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #9ca3af;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/ToolCallChip.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.ai-tool-chip {
+  margin: 4px 16px;
+}
+.ai-tool-chip__head {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #d1d5db;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.ai-tool-chip__head:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.ai-tool-chip__icon {
+  font-size: 12px;
+}
+.ai-tool-chip__name {
+  font-weight: 500;
+}
+.ai-tool-chip__caret {
+  color: #6b7280;
+  font-size: 10px;
+}
+.ai-tool-chip__body {
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+.ai-tool-chip__args pre {
+  margin: 0;
+  font-size: 11px;
+  color: #9ca3af;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/FollowUpChip.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.ai-followup {
+  display: inline-flex;
+  background: rgba(79, 70, 229, 0.12);
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  color: #c7d2fe;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 4px 16px;
+  transition: background 0.15s ease;
+}
+.ai-followup:hover {
+  background: rgba(79, 70, 229, 0.22);
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/EmptyState.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 16px;
+  color: #e5e7eb;
+}
+.ai-empty__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+.ai-empty__suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ai-empty__suggestion {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #d1d5db;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.ai-empty__suggestion:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/ChatMessages.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.ai-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ai-chat-messages__error {
+  margin: 4px 16px;
+  padding: 8px 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 8px;
+  color: #fca5a5;
+  font-size: 12px;
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/InputField.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-input-field {
+  flex: 1;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: inherit;
+  padding: 8px 10px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+.ai-input-field::placeholder {
+  color: #6b7280;
+}
+.ai-input-field:disabled {
+  opacity: 0.5;
+}
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/ModelSelector.scss ***!
+  \***************************************************************************************************************************************************************************************************/
+.ai-model-selector {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  max-width: 140px;
+}
+.ai-model-selector option {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+.ai-model-selector:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/SendButton.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-send-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+.ai-send-btn:hover {
+  background: #6366f1;
+}
+.ai-send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/AttachButton.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.ai-attach-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: transparent;
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.ai-attach-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/ScrollTopButton.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+.ai-scrolltop-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: transparent;
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.ai-scrolltop-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatInput/ChatInput.scss ***!
+  \***********************************************************************************************************************************************************************************************/
+.ai-chat-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 0 12px 12px;
+}
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/Controls/UndoButton.scss ***!
+  \***********************************************************************************************************************************************************************************************/
+.ai-undo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.ai-undo-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+.ai-undo-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/Controls/UsageCounter.scss ***!
+  \*************************************************************************************************************************************************************************************************/
+.ai-usage {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 11px;
+  padding: 0 4px;
+}
+.ai-usage__sep {
+  opacity: 0.5;
+}
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/Settings/ApiKeyField.scss ***!
+  \************************************************************************************************************************************************************************************************/
+.ai-apikey {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ai-apikey__label {
+  font-size: 12px;
+  color: #d1d5db;
+}
+.ai-apikey__row {
+  display: flex;
+  gap: 6px;
+}
+.ai-apikey__input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: #e5e7eb;
+  font-size: 12px;
+  outline: none;
+}
+.ai-apikey__input:focus {
+  border-color: #4f46e5;
+}
+.ai-apikey__save {
+  background: #4f46e5;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ai-apikey__save:hover {
+  background: #6366f1;
+}
+.ai-apikey__hint {
+  margin: 0;
+  font-size: 11px;
+  color: #6b7280;
+}
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/Settings/Toggles.scss ***!
+  \********************************************************************************************************************************************************************************************/
+.ai-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ai-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #d1d5db;
+  cursor: pointer;
+}
+.ai-toggle__input {
+  appearance: none;
+  width: 32px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.ai-toggle__input::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #9ca3af;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.ai-toggle__input:checked {
+  background: #4f46e5;
+}
+.ai-toggle__input:checked::after {
+  transform: translateX(14px);
+  background: #fff;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/Settings/SettingsPanel.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.ai-settings {
+  position: absolute;
+  bottom: 64px;
+  right: 16px;
+  width: 280px;
+  background: #1f2937;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ai-settings__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e5e7eb;
+  font-size: 13px;
+  font-weight: 600;
+}
+.ai-settings__header button {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 18px;
+  cursor: pointer;
+}
+.ai-settings__header button:hover {
+  color: #fff;
+}
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/components/ChatPanel/index.scss ***!
+  \*******************************************************************************************************************************************************************************************/
+.ai-chat-panel {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 380px;
+  height: 600px;
+  max-height: 80vh;
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.ai-chat-panel__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.ai-chat-panel__settings-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.ai-chat-panel__settings-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+.ai-chat-panel__warn {
+  padding: 8px 12px;
+  background: rgba(245, 158, 11, 0.1);
+  border-top: 1px solid rgba(245, 158, 11, 0.25);
+  color: #fcd34d;
+  font-size: 11px;
+  text-align: center;
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/AI/styles/chatPanel.scss ***!
+  \*********************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/* Global resets for the AI chat panel — scoped to .ai-* classes only. */
+.ai-chat-panel,
+.ai-chat-panel * {
+  box-sizing: border-box;
+}
+
+.ai-chat-panel button {
+  font-family: inherit;
+}

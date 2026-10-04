@@ -1,0 +1,118 @@
+.wp24-dc form > div,
+.wp24-dc .dc-form > div {
+	display: flex;
+	align-items: center;
+}
+
+.wp24-dc form div *,
+.wp24-dc .dc-form div * {
+	float: left;
+}
+
+.wp24-dc > br {
+	clear: both;
+}
+
+.wp24-dc form input[type="text"],
+.wp24-dc .dc-form input[type="text"] {
+	margin: 0 10px 0 0;
+}
+
+.wp24-dc form select,
+.wp24-dc .dc-form select {
+	margin: 0 10px 0 10px;
+}
+
+@media (min-width: 500px) {
+	.wp24-dc .table {
+		display: table;
+	}
+
+	.wp24-dc .table-row {
+		display: table-row;
+	}
+
+	.wp24-dc .table-row br {
+		display: none;
+	}
+
+	.wp24-dc .table-cell {
+		display: table-cell;
+		padding: 2px;
+	}
+}
+
+.wp24-dc .dc-spinner {
+	--border-color: #fff;
+
+	position: relative;
+	color: transparent !important;
+}
+.wp24-dc .dc-spinner::after {
+	content: ' ';
+	position: absolute;
+	width: 1.2rem;
+	height: 1.2rem;
+	top: 50%;
+	left: 50%;
+	margin: -.5em 0 0 -.5em;
+	font-size: 1.125rem;
+	border-radius: 50%;
+	border: .2em solid var(--border-color);
+	border-bottom-color: transparent;
+	animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.wp24-dc form > div,
+	.wp24-dc .dc-form > div {
+		display: inline;
+	}
+
+	.wp24-dc form input,
+	.wp24-dc .dc-form input,
+	.wp24-dc form button,
+	.wp24-dc .dc-form button,
+	.wp24-dc form select,
+	.wp24-dc .dc-form select {
+		width: 100% !important;
+		margin: 5px 0 !important;
+	}
+
+	.wp24-dc form span.dot,
+	.wp24-dc .dc-form span.dot {
+		display: none;
+	}
+
+	.wp24-dc .table-row br {
+		clear: both;
+	}
+
+	.wp24-dc .table-cell {
+		float: left;
+		padding: 0 5px;
+	}
+}
+
+.whois-info pre {
+	margin: 0;
+	max-height: 500px;
+	white-space: pre-wrap;
+	overflow: scroll;
+}
+
+.whois-info-inline pre {
+	margin: 0;
+	padding: 5px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}

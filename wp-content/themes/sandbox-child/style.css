@@ -1,0 +1,14 @@
+/*
+Theme Name:     Sandbox Child
+Theme URI:      https://demo.oceanthemes.site/sandbox/
+Description:    Make your modifications to [Parent Theme] in this child theme.
+Author:         Oceanthemes
+Author URI:     http://oceanthemes.net/
+Version:        1.0
+Template:       sandbox
+*/
+
+@import url("/wp-content/themes/sandbox/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */

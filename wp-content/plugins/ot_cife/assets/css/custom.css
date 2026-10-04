@@ -1,0 +1,41 @@
+/*--------------------------
+    unicons
+-------------------------- */
+
+@font-face {
+  font-family: "Custom";
+  src: url("/wp-content/plugins/ot_cife/assets/fonts/Custom.woff2") format("woff2"), url("/wp-content/plugins/ot_cife/assets/fonts/Custom.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icn-],
+[class*=" icn-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: normal;
+}
+[class^=icn-],
+[class*=" icn-"] {
+  font-family: "Custom" !important;
+}
+.icn-caret-right:before {
+  content: "\e900";
+}
+.icn-comment-line:before {
+  content: "\e904";
+}
+.icn-external:before {
+  content: "\e906";
+}
+.icn-flower:before {
+  content: "\e907";
+}
+.icn-terminal:before {
+  content: "\e905";
+}

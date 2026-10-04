@@ -1,0 +1,225 @@
+.tamm-settings {
+    position: relative;
+    display: none;
+}
+
+.tamm-modal-backdrop {
+    z-index: 159899;
+}
+
+.tamm-modal {
+    z-index: 159999;
+}
+
+.ot-tamm-settings .tamm-modal {
+    width: 1000px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+}
+
+.ot-tamm-settings .media-modal-close {
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+.ot-tamm-settings .media-modal-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ot-tamm-settings-elementor .media-modal-close {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    top: -25px;
+    right: -25px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.ot-tamm-settings-elementor .media-modal-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ot-tamm-settings-elementor .tamm-modal {
+    top: 80px;
+    left: 80px;
+    right: 80px;
+    bottom: 80px;
+}
+
+.ot-mega-menu-content-frame {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.ot-mega-menu-content-frame.active {
+    display: block;
+}
+
+.tamm-menu a:focus,
+.tamm-menu a:active {
+    outline: none;
+}
+
+.tamm-menu a.active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tamm-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.tamm-content > .tamm-panel {
+    padding: 20px;
+    display: none;
+}
+
+.tamm-content > .tamm-panel.active {
+    display: block;
+}
+
+.tamm-content > .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ot-tamm-settings-elementor .ot-loading {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.ot-tamm-settings-elementor .ot-mega-menu-content-frame {
+    z-index: 10;
+    position: relative;
+}
+
+.ot-tamm-settings-elementor .ot-loading:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: #666 transparent #666 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+ * Mega Menu Content Fields
+ */
+.tamm-mega-content {
+    position: relative;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.tamm-submenu-column {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: width 0.7s;
+    float: left;
+    position: relative;
+    padding: 10px;
+}
+
+.tamm-submenu-column ul {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.tamm-submenu-column li.menu-item-depth-0 {
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 40px 0 0;
+}
+
+.tamm-submenu-column .tamm-column-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    cursor: pointer;
+}
+
+.tamm-submenu-column .tamm-resizable-e {
+    right: 20px;
+}
+
+.tamm-submenu-column .tamm-resizable-w {
+    text-align: right;
+}
+
+/**
+ * Background Fields
+ */
+.tamm-panel-background {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+.tamm-panel-background .background-image {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.tamm-panel-background .background-image-preview {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tamm-panel-background .background-image-preview img {
+    max-width: 100%;
+}
+
+.tamm-toolbar .spinner {
+    margin-top: 22px;
+}
